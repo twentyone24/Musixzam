@@ -14,6 +14,10 @@
 		67CDA332279805830046F851 /* MusixzamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDA331279805830046F851 /* MusixzamTests.swift */; };
 		67CDA33C279805830046F851 /* MusixzamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDA33B279805830046F851 /* MusixzamUITests.swift */; };
 		67CDA33E279805830046F851 /* MusixzamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDA33D279805830046F851 /* MusixzamUITestsLaunchTests.swift */; };
+		67CDA34E279806B40046F851 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDA34D279806B40046F851 /* TrackModel.swift */; };
+		67CDA351279806E80046F851 /* MusicRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDA350279806E80046F851 /* MusicRecognizer.swift */; };
+		67CDA354279807810046F851 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDA353279807810046F851 /* View.swift */; };
+		67CDA3562798079D0046F851 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDA3552798079D0046F851 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		67CDA337279805830046F851 /* MusixzamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusixzamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CDA33B279805830046F851 /* MusixzamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusixzamUITests.swift; sourceTree = "<group>"; };
 		67CDA33D279805830046F851 /* MusixzamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusixzamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67CDA34A279805B80046F851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		67CDA34D279806B40046F851 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		67CDA350279806E80046F851 /* MusicRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRecognizer.swift; sourceTree = "<group>"; };
+		67CDA353279807810046F851 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		67CDA3552798079D0046F851 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,11 @@
 		67CDA31F279805810046F851 /* Musixzam */ = {
 			isa = PBXGroup;
 			children = (
+				67CDA34A279805B80046F851 /* Info.plist */,
 				67CDA320279805810046F851 /* MusixzamApp.swift */,
-				67CDA322279805810046F851 /* ContentView.swift */,
+				67CDA34B279806300046F851 /* Views */,
+				67CDA34C2798063A0046F851 /* Model */,
+				67CDA34F279806D20046F851 /* ViewModels */,
 				67CDA324279805830046F851 /* Assets.xcassets */,
 				67CDA326279805830046F851 /* Preview Content */,
 			);
@@ -125,6 +137,40 @@
 				67CDA33D279805830046F851 /* MusixzamUITestsLaunchTests.swift */,
 			);
 			path = MusixzamUITests;
+			sourceTree = "<group>";
+		};
+		67CDA34B279806300046F851 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67CDA322279805810046F851 /* ContentView.swift */,
+				67CDA3552798079D0046F851 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67CDA34C2798063A0046F851 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67CDA34D279806B40046F851 /* TrackModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67CDA34F279806D20046F851 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				67CDA350279806E80046F851 /* MusicRecognizer.swift */,
+				67CDA352279807760046F851 /* Extensions */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		67CDA352279807760046F851 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67CDA353279807810046F851 /* View.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				67CDA323279805810046F851 /* ContentView.swift in Sources */,
+				67CDA351279806E80046F851 /* MusicRecognizer.swift in Sources */,
+				67CDA354279807810046F851 /* View.swift in Sources */,
+				67CDA3562798079D0046F851 /* HomeView.swift in Sources */,
+				67CDA34E279806B40046F851 /* TrackModel.swift in Sources */,
 				67CDA321279805810046F851 /* MusixzamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +472,8 @@
 				DEVELOPMENT_TEAM = F59A6ZU5Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Musixzam/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This allows Musixzam to find the song.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +503,8 @@
 				DEVELOPMENT_TEAM = F59A6ZU5Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Musixzam/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This allows Musixzam to find the song.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
